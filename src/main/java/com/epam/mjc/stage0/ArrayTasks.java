@@ -27,8 +27,8 @@ public class ArrayTasks {
      */
     public int[] generateNumbers(int length) {
 		int[] numbers = new int[length];
-		for (int i = 1; i <= length; ++i) {
-			numbers[i] = i;
+		for (int i = 0; i < length; ++i) {
+			numbers[i] = i + 1;
 		}
 		return numbers;
     }
@@ -107,7 +107,7 @@ public class ArrayTasks {
 		int[] positiveNumbersArray = new int[positiveNumberCount];
 		int positiveIndex = 0;
 		for (int i = 0; i < arr.length; ++i) {
-			if (arr[i] >= 0) {
+			if (arr[i] >= 1) {
 				positiveNumbersArray[positiveIndex] = arr[i];
 				++positiveIndex;
 			}
